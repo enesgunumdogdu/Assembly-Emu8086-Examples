@@ -33,11 +33,10 @@ org 100h
 ;    mov al,0ah
 ;    int 10h
 ;loop dongu
+
+
                                     
-                                    
-                                    
-                                    
-  
+                                                                    
    
 ;SORU 3- ASAGIDAKI SEKLI CIZEN KODU YAZINIZ
 ;*
@@ -112,7 +111,25 @@ org 100h
 ;    
 ;    
 ;loop dongu
-;                                    
+; 
+
+
+;SORU 6-
+;mov cx, 8
+;mov ah, 0eh
+;
+;anaDongu:
+;   push cx
+;    icDongu:
+;        mov al, '*'
+;        int 10h
+;        loop icDongu
+;
+;    mov al, ' '
+;    int 10h
+;    pop cx
+;    loop anaDongu
+;hlt
                                     
                                     
                                     
