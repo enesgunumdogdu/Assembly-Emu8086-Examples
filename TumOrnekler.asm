@@ -130,12 +130,3 @@ org 100h
 ;    pop cx
 ;    loop anaDongu
 ;hlt
-                                    
-                                    
-                                    
-
-
-
-
-
-
