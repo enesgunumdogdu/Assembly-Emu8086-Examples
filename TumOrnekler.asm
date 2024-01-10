@@ -118,11 +118,22 @@ org 100h
                                     
 
 ;SORU 6-
+;mov cx, 8
+;mov ah, 0eh
+;
+;anaDongu:
+;   push cx
+;    icDongu:
+;        mov al, '*'
+;        int 10h
+;        loop icDongu
+;    
+;    mov al, ' '
+;    int 10h
+;    pop cx
+;    loop anaDongu
+;hlt
 
-
-
-
-ret
 
 
 
