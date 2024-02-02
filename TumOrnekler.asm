@@ -114,7 +114,7 @@ org 100h
 ; 
 
 
-;SORU 6-
+;SORU 6- ******** ******* ****** ***** **** *** ** * ciktisini veren kodu yaziniz.
 ;mov cx, 8
 ;mov ah, 0eh
 ;
@@ -130,3 +130,73 @@ org 100h
 ;    pop cx
 ;    loop anaDongu
 ;hlt
+
+
+;SORU 7 - Büyük harfleri küçük harf yapan kodu yaziniz
+; lea si,dizi
+;dongu:
+;  cmp[si], '$'
+;  je son
+;  mov ax, [si]
+;  or ax 00100000b
+;  inc si
+;  mov ah,0eh
+;  int 10h
+;  loop dongu
+;
+;son:
+;hlt
+;dizi db "DeNeMe$"
+
+
+;SORU 8 - Dizideki tüm harfleri küçülten kodu yaziniz.
+;dizi db "EnEsGuNumdoGdu$"
+;
+;lea si,dizi
+;dongu:
+;cmp [si], '$'
+;je son
+;mov ax,[si]
+;or ax, 0010000b
+;inc si
+;mov ah,0eh
+;int 10h
+;
+;loop dongu
+;
+;son:hlt
+
+
+
+;SORU 9 - Dizideki tüm harfleri büyüten kodu yaziniz.
+;lea si,dizi
+;
+;dongu:
+;cmp[si],'$'
+;je son
+;mov ax,[si]
+;and ax,11011111b
+;inc si
+;mov ah,0eh
+;int 10h
+;
+;loop dongu
+;son:hlt
+;    dizi db "EnesGunUmDogDu$"
+
+
+;SORU 10 - Dizideki büyük harfleri küçük, küçük harfleri büyük yapan kodu yaziniz.
+;lea si,dizi 
+;
+;dongu:
+;cmp[si], '$'
+;je son
+;mov ax,[si]
+;xor ax,00100000b
+;inc si
+;mov ah,0eh
+;int 10h
+;loop dongu
+;
+;son:hlt
+;    dizi db "EnEsGuNumdoGdu$"
