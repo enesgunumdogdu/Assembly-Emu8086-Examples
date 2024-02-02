@@ -200,3 +200,42 @@ org 100h
 ;
 ;son:hlt
 ;    dizi db "EnEsGuNumdoGdu$"
+
+
+;SORU 11- Verilen string ifadeyi tersten yazan kodu yaziniz.
+
+;jmp basla
+;mesaj1 db "EnesGunumdogdu"
+;
+;basla
+;  lea bx,mesaj1
+
+;mov si,bx
+;dongu1:
+;  cmp [si],"$"
+;  je git
+;  inc si
+;  jmp dongu1
+;git:
+;  dec si
+;
+;dongu2:
+;  cmp bx,si
+;  jae git2
+;  mov al,[bx]
+;  mov ah,[si]
+;  mov [si],al
+;  mov [bx],ah
+;  inc bx
+;  dec si
+;
+;  jmp dongu2
+;
+;git2:
+;  lea dx,mesaj1
+;  mov ah,09h
+;  int 21h
+;
+;  mov ah,0eh
+;  mov al,0ah
+;  int 10h
