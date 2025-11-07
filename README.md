@@ -61,19 +61,6 @@ Each example follows a similar structure:
   - `INT 21h` with `AH=09h` for string output
 - Terminates with `HLT` or `RET`
 
-## Notes
-
-- All examples are commented out by default
-- Only uncomment one example at a time to avoid conflicts
-- Examples use Turkish variable names and comments in the source code
-- The code demonstrates educational patterns suitable for learning Assembly 8086
-
-## Learning Resources
-
-- [emu8086 Documentation](http://www.emu8086.com/)
-- Intel 8086 Instruction Set Reference
-- BIOS Interrupt Reference
-
 ## License
 
 This project is provided as educational material. Feel free to use and modify for learning purposes.
